@@ -22,7 +22,7 @@ Install the required libraries by navigating to Sketch -> Include Library -> Man
 - ChatGPT
 
 ## Screenshots
-![Ekran görüntüsü 2023-05-18 130709](https://github.com/ozermehmett/NodeMCU-Telegram-Bot-with-OpenAI-API-Integration/assets/115498182/128c7446-556a-417d-b7d3-61e70df928af)
+![Ekran görüntüsü 2023-05-18 130709](https://github.com/ozermehmett/NodeMCU-Telegram-Bot-with-OpenAI-API-Integration/assets/115498182/6438766f-d49a-417e-ac9a-3c8eae77ef24)
 
 ## Usage
 - Start the Telegram bot by sending the  command./start
