@@ -1,5 +1,4 @@
 #include <ESP8266WiFi.h>
-#include <WiFiClientSecure.h>
 #include <UniversalTelegramBot.h>
 #include <ArduinoJson.h>
 #include <WiFiClientSecureBearSSL.h>
@@ -36,7 +35,7 @@ void handleNewMessages(int numNewMessages) {
       if (chat_gpt.simple_message("gpt-3.5-turbo-0301", "user", text, result)) {
           bot.sendMessage(chat_id, result, "");
     } else{
-      bot.sendMessage(chat_id, "I'm sorry, we encountered an error. Please try again.");
+          bot.sendMessage(chat_id, "I'm sorry, we encountered an error. Please try again.");
       }
     } 
   }
@@ -65,7 +64,6 @@ void loop() {
     int numNewMessages = bot.getUpdates(bot.last_message_received + 1);
  
     while(numNewMessages) {
-      Serial.println("got response");
       handleNewMessages(numNewMessages);
       numNewMessages = bot.getUpdates(bot.last_message_received + 1);
     }
