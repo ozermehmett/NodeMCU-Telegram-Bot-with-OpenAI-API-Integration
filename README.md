@@ -15,7 +15,6 @@ To run this project, you will need the following components:
 ## Installation
 Install the required libraries by navigating to Sketch -> Include Library -> Manage Libraries and search for the following libraries:
 - ESP8266WiFi
-- WiFiClientSecure
 - UniversalTelegramBot
 - ArduinoJson
 - WiFiClientSecureBearSSL
